@@ -18,7 +18,7 @@ client.login(process.env.DISCORD_TOKEN);
 // });
 
 const trashReminder = cron.schedule(
-  "0 15 * * *",
+  "0 18 * * 2,4,6",
   () => {
     const channel = client.channels.cache.get("920676429052661793");
     console.log("enviou a mensagem");
