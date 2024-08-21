@@ -17,7 +17,7 @@ client.login(process.env.DISCORD_TOKEN);
 //   channel.send("Todo minuto");
 // });
 
-const trashReminder = cron.schedule("0 18 * * 2,4,6", () => {
+const trashReminder = cron.schedule("0 11 * * *", () => {
   const channel = client.channels.cache.get("920676429052661793");
   channel.send("Hoje é dia de tirar o lixo!");
 });
